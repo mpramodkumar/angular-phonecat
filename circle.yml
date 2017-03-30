@@ -2,11 +2,11 @@ machine:
   node:
     version:
       6.9.1
+test:
+  pre:
     - npm install karma-chrome-launcher
     - npm install karma-firefox-launcher
     - npm install karma-jasmine
-test:
-  pre:
     - npm start:
         background: true
     - sleep 5
