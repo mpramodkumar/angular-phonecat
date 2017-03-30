@@ -8,5 +8,8 @@ test:
         background: true
     - sleep 5
   override:
+    - npm install karma-chrome-launcher --save-dev
+    - npm install karma-firefox-launcher --save-dev
+    - npm install karma-jasmine --save-dev
     - npm run test-single-run
 
